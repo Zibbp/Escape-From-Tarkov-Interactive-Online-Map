@@ -1,0 +1,120 @@
+.canvas-container {
+    width: 1920px;
+    height: 1080px;
+}
+
+
+
+.tools {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: move;
+    background: #f5f2f0;
+    padding: 15px;
+    width: 90px;
+}
+
+.buttons {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align:  center;
+}
+
+.buttons button {
+    margin:  0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.properties {
+    padding-top: 20px;
+    text-align:  center;
+}
+
+.colors {
+    display: inline-block;
+}
+
+.colors div {
+    height: 25px;
+    width: 25px;
+    display:  inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.colors div:nth-child(-n+3) {
+    margin-bottom: 5px;
+}
+
+.range {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+    border:  1px dotted;
+}
+
+.range:hover .slide-range {
+    display: block;
+}
+
+.slide-range {
+    position: absolute;
+    background: #f3f3f3;
+    left: 91px;
+    top: -5px;
+    width: 120px;
+    height: 20px;
+    display: none;
+    padding: 5px 10px 5px 20px;
+}
+
+#drawing-line-width {
+    width: 100%;
+}
+
+.drawing-color {
+    width: 86%;
+    margin-bottom: 5px;
+}
+
+.background-options {
+    width: 100%;
+}
+
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 11;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #64CEAA;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

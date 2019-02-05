@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Escape from Tarkov Maps Editor</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-index.css">
+<body>
+
+<main>
+    <div class="main_content">
+        <h1 class="index-header">Interactive Tarkov Map</h1>
+        <input id="roomID" class="input-room" size="20" maxlength="20" type="text" placeholder="Room ID">
+        <input id="signup" class="buttom-room" value="Enter" type="submit">
+    </div>
+    
+</main>
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.hotkeys.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".buttom-room").on('click', function () {
+            let input = $(".input-room").val();
+            if (input) location.href = "room.html?id=" + input;
+        });
+
+        $(".input-room")
+            .on('input', function () {
+                let input = $(this);
+                input.val(input.val().replace(eval("/[^A-Za-z0-9]/g"), ''));
+            })
+            .on('keydown', null, 'return', function() {
+                $(".buttom-room").trigger('click');
+            });
+    });
+</script>
+
+
+</body>
+</html>

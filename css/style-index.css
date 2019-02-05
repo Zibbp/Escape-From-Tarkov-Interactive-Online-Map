@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Bender-Light;
+    src: url('fonts/Bender-Light.eot'),
+        url('fonts/Bender-Light.woff') format('woff'),
+        url('fonts/Bender-Light.ttf') format('truetype'),
+        url('fonts/Bender-Light.svg#benderlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.index-header {
+    font-family: Bender-Light;
+    color: #9a8866;
+    text-align:center;
+}
+
+body {
+    background-color: #0e0e0e;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main_content {
+    width: 343px;
+    margin-top: 0%;
+}
+
+.input-room {
+    font-family: Bender-Light;
+    display: block;
+    box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
+    text-align: left;
+    border: none;
+    padding: 11px 12px;
+    font-size: 17pt;
+    background: #000000;
+    color: #9a8866;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.input-room:focus {
+    outline-width: 0;
+}
+
+.buttom-room {
+    text-align: center;
+    word-break: break-word;
+    background-color: #9a8866;
+    border: none;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 17pt;
+    padding: 11px 24px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    cursor: pointer;
+    font-family: Bender-Light;
+    font-weight: bold;
+    text-decoration: none;
+    width: 100%;
+    box-shadow: 0 0 100px rgba(65,61,52,1), 0 0 6px rgba(232,190,107,0.8);
+
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
