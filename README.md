@@ -1,7 +1,7 @@
 # EFT Interactive Online Map
 ----
 ## Live Link
-[Link](https://tarkov.zibbp.net)
+[Link](https://zibbp.github.io/Escape-From-Tarkov-Interactive-Online-Map/)
 ----
 ## What is this?
 This is an online map that allows users to join a room id and plan routes for a squad in EFT.
