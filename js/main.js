@@ -1,13 +1,13 @@
 $(function() {
 
-    let config = {
-        apiKey: "AIzaSyCGzj1b5RXX_H0CUQe-CxluSKK4_B8L8zk",
-        authDomain: "tarkov-interactive-map.firebaseapp.com",
-        databaseURL: "https://tarkov-interactive-map.firebaseio.com",
-        projectId: "tarkov-interactive-map",
-        storageBucket: "",
-        messagingSenderId: "154243994182"
-    };
+  let config = {
+    apiKey: "AIzaSyBr3UJb7Cq7e-N_VQLFSB0EM2jezV0OEeY",
+    authDomain: "https://tarkov-interactive-map-9feef.firebaseapp.com",
+    databaseURL: "https://tarkov-interactive-map-9feef.firebaseio.com",
+    projectId: "tarkov-interactive-map-9feef",
+    storageBucket: "",
+    messagingSenderId: "341245900529",
+  };
 
     firebase.initializeApp(config);
 
